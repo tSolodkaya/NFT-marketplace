@@ -292,6 +292,11 @@ button {
 .button-link--hero-padding {
   padding: 20px 50px;
 }
+@media screen and (width < 834px) {
+  .button-link--hero-padding {
+    padding: 20px 50px;
+  }
+}
 .button-link--header-padding {
   padding: 19px 30px;
 }
@@ -350,14 +355,12 @@ button {
 }
 
 @media screen and (width > 833px) {
-  .hero__text-btns-wrap,
-  .hero-card {
+  .hero__text-btns-wrap {
     width: 330px;
   }
 }
 @media screen and (width > 1279px) {
-  .hero__text-btns-wrap,
-  .hero-card {
+  .hero__text-btns-wrap {
     width: 510px;
   }
 }

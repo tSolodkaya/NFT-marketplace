@@ -12,6 +12,10 @@
   margin-bottom: 40px;
 
   &--hero-padding {
+    @media screen and (width < 834px) {
+      padding: 20px 50px;
+    }
+
     padding: 20px 50px;
   }
 
