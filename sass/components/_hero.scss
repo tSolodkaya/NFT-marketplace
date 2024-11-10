@@ -1,0 +1,143 @@
+.hero {
+  @extend %section;
+
+  @media screen and (width > 833px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.hero__text-btns-wrap,
+.hero-card {
+  @media screen and (width > 833px) {
+    width: 330px;
+  }
+
+  @media screen and (width > 1279px) {
+    width: 510px;
+  }
+}
+
+.hero__headline {
+  margin-bottom: 10px;
+  font-size: 28px;
+
+  @media screen and (width > 833px) {
+    margin-bottom: 20px;
+    font-size: 38px;
+    line-height: 120%;
+  }
+
+  @media screen and (width > 1279px) {
+    font-size: 67px;
+    line-height: 110%;
+  }
+}
+
+.hero__subtext {
+  margin-bottom: 40px;
+  font-weight: 400;
+
+  @media screen and (width > 833px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (width > 1279px) {
+    font-size: 22px;
+  }
+}
+
+.hero-card {
+  margin-bottom: 40px;
+  width: 315px;
+
+  border-radius: 22px;
+  background-color: $background-secondary;
+  overflow: hidden;
+
+  @media screen and (width > 833px) {
+    width: 330px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (width > 1279px) {
+    width: 510px;
+  }
+}
+
+.hero-card__info {
+  padding: 20px;
+}
+
+.hero-card__title {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.artist-card__name {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.artist-card__link {
+  display: flex;
+  gap: 12px;
+}
+
+.hero__btns-additional {
+  display: none;
+  @media screen and (width > 833px) {
+    &--tab {
+      display: block;
+    }
+  }
+
+  @media screen and (width < 834px) {
+    &--mob {
+      display: block;
+    }
+  }
+}
+
+.additionals {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.additional {
+  min-width: 85px;
+  @media screen and (width > 833px) {
+    min-width: 90px;
+  }
+
+  @media screen and (width > 1279px) {
+    min-width: 150px;
+  }
+}
+
+.additional__numbers {
+  font-family: $secondary-font-family;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 160%;
+  text-align: left;
+
+  @media screen and (width > 1279px) {
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
+
+.additional__subinfo {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+
+  @media screen and (width > 1279px) {
+    font-size: 24px;
+  }
+}

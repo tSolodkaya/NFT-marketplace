@@ -1,0 +1,33 @@
+.button-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  background-color: $call-to-action-color;
+  border-radius: 20px;
+  color: $text-color;
+  text-align: center;
+
+  margin-bottom: 40px;
+
+  &--hero-padding {
+    padding: 20px 50px;
+  }
+
+  &--header-padding {
+    padding: 19px 30px;
+  }
+
+  @media screen and (width > 833px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (width > 1279px) {
+    margin-bottom: 30px;
+  }
+}
+
+.button {
+  display: inline-block;
+}

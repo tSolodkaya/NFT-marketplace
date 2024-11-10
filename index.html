@@ -24,5 +24,197 @@
     <link rel="manifest" href="./images/favicon/site.webmanifest" />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header container">
+      <div class="site-logo site-logo__header">
+        <a href="./index.html" class="site-logo__link">
+          <svg width="32" height="32">
+            <use href="./images/icons.svg#i-logo"></use>
+          </svg>
+          <svg width="200" height="20">
+            <use href="./images/icons.svg#i-marketplace"></use>
+          </svg>
+        </a>
+      </div>
+      <button class="burger-menu" type="button">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#i-Burger-Menu"></use>
+        </svg>
+      </button>
+      <nav class="navigation">
+        <ul class="menu">
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Rankings</a></li>
+          <li><a href="#">Connect a wallet</a></li>
+        </ul>
+        <div class="button">
+          <a class="button-link button-link--header-padding" href="#">
+            <svg width="20" height="20">
+              <use href="./images/icons.svg#i-User"></use></svg
+            >Sign Up</a
+          >
+        </div>
+      </nav>
+    </header>
+    <section class="hero container">
+      <div class="hero__text-btns-wrap">
+        <h1 class="hero__headline">Discover digital art & Collect NFTs</h1>
+        <p class="hero__subtext">
+          NFT marketplace UI created with Anima for Figma. Collect, buy and sell
+          art from more than 20k NFT artists.
+        </p>
+        <div class="hero__btns-additional hero__btns-additional--tab">
+          <div class="button">
+            <a class="button-link button-link--hero-padding" href="#">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#i-rocket"></use></svg
+              >Get Started
+            </a>
+          </div>
+          <ul class="additionals">
+            <li class="additional">
+              <a href="#">
+                <p class="additional__numbers">240k+</p>
+                <p class="additional__subinfo">Total Sale</p>
+              </a>
+            </li>
+            <li class="additional">
+              <a href="#">
+                <p class="additional__numbers">100k+</p>
+                <p class="additional__subinfo">Auctions</p>
+              </a>
+            </li>
+            <li class="additional">
+              <a href="#">
+                <p class="additional__numbers">240k+</p>
+                <p class="additional__subinfo">Artists</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <article class="hero-card">
+        <picture>
+          <source
+            srcset="
+              ./images/hero/desk/hero@1x.avif 1x,
+              ./images/hero/desk/hero@2x.avif 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/avif"
+          />
+          <source
+            srcset="
+              ./images/hero/desk/hero@1x.webp 1x,
+              ./images/hero/desk/hero@2x.webp 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/desk/hero@1x.jpg 1x,
+              ./images/hero/desk/hero@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./images/hero/tab/hero@1x.avif 1x,
+              ./images/hero/tab/hero@2x.avif 2x
+            "
+            media="(min-width: 834px)"
+            type="image/avif"
+          />
+          <source
+            srcset="
+              ./images/hero/tab/hero@1x.webp 1x,
+              ./images/hero/tab/hero@2x.webp 2x
+            "
+            media="(min-width: 834px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/tab/hero@1x.jpg 1x,
+              ./images/hero/tab/hero@2x.jpg 2x
+            "
+            media="(min-width: 834px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./images/hero/mob/hero@1x.avif 1x,
+              ./images/hero/mob/hero@2x.avif 2x
+            "
+            media="(max-width: 833px)"
+            type="image/avif"
+          />
+          <source
+            srcset="
+              ./images/hero/mob/hero@1x.webp 1x,
+              ./images/hero/mob/hero@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/mob/hero@1x.jpg 1x,
+              ./images/hero/mob/hero@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <img src="./images/hero/mob/hero@1x.jpg" alt="astronaut in space" />
+        </picture>
+        <div class="hero-card__info">
+          <h2 class="hero-card__title">Space Walking</h2>
+
+          <div class="artist-card">
+            <a class="artist-card__link" href="./artist">
+              <picture>
+                <source
+                  srcset="
+                    ./images/hero/avatar@1x.png 1x,
+                    ./images/hero/avatar@2x.png 2x
+                  "
+                />
+                <img src="./images/hero/avatar@1x.png" alt="Shroomie avatar" />
+              </picture>
+              <h3 class="artist-card__name">Animakid</h3></a
+            >
+          </div>
+        </div>
+      </article>
+      <div class="hero__btns-additional hero__btns-additional--mob">
+        <div class="button">
+          <a class="button-link button-link--mob-margin" href="#">
+            <svg width="20" height="20">
+              <use href="./images/icons.svg#i-rocket"></use></svg
+            >Get Started
+          </a>
+        </div>
+        <ul class="additionals">
+          <li class="additional">
+            <a href="#">
+              <p class="additional__numbers">240k+</p>
+              <p class="additional__subinfo">Total Sale</p>
+            </a>
+          </li>
+          <li class="additional">
+            <a href="#">
+              <p class="additional__numbers">100k+</p>
+              <p class="additional__subinfo">Auctions</p>
+            </a>
+          </li>
+          <li class="additional">
+            <a href="#">
+              <p class="additional__numbers">240k+</p>
+              <p class="additional__subinfo">Artists</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
 </html>
