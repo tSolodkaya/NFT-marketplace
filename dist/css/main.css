@@ -209,14 +209,14 @@ button {
   cursor: pointer;
 }
 
-.hero {
+.collection, .hero {
   padding-top: 40px;
   padding-bottom: 40px;
   padding-right: 30px;
   padding-left: 30px;
 }
 @media screen and (width > 833px) {
-  .hero {
+  .collection, .hero {
     padding-top: 80px;
     padding-bottom: 80px;
     padding-right: 72px;
@@ -224,7 +224,7 @@ button {
   }
 }
 @media screen and (width > 1279px) {
-  .hero {
+  .collection, .hero {
     padding-right: 115px;
     padding-left: 115px;
   }
