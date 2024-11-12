@@ -94,79 +94,81 @@
         </div>
       </div>
       <article class="hero-card">
-        <picture>
-          <source
-            srcset="
-              ./images/hero/desk/hero@1x.avif 1x,
-              ./images/hero/desk/hero@2x.avif 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/avif"
-          />
-          <source
-            srcset="
-              ./images/hero/desk/hero@1x.webp 1x,
-              ./images/hero/desk/hero@2x.webp 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/hero/desk/hero@1x.jpg 1x,
-              ./images/hero/desk/hero@2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/jpeg"
-          />
-          <source
-            srcset="
-              ./images/hero/tab/hero@1x.avif 1x,
-              ./images/hero/tab/hero@2x.avif 2x
-            "
-            media="(min-width: 834px)"
-            type="image/avif"
-          />
-          <source
-            srcset="
-              ./images/hero/tab/hero@1x.webp 1x,
-              ./images/hero/tab/hero@2x.webp 2x
-            "
-            media="(min-width: 834px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/hero/tab/hero@1x.jpg 1x,
-              ./images/hero/tab/hero@2x.jpg 2x
-            "
-            media="(min-width: 834px)"
-            type="image/jpeg"
-          />
-          <source
-            srcset="
-              ./images/hero/mob/hero@1x.avif 1x,
-              ./images/hero/mob/hero@2x.avif 2x
-            "
-            media="(max-width: 833px)"
-            type="image/avif"
-          />
-          <source
-            srcset="
-              ./images/hero/mob/hero@1x.webp 1x,
-              ./images/hero/mob/hero@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/hero/mob/hero@1x.jpg 1x,
-              ./images/hero/mob/hero@2x.jpg 2x
-            "
-            type="image/jpeg"
-          />
-          <img src="./images/hero/mob/hero@1x.jpg" alt="astronaut in space" />
-        </picture>
+        <div class="collection-card__hero-img-thumb">
+          <picture>
+            <source
+              srcset="
+                ./images/hero/desk/hero@1x.avif 1x,
+                ./images/hero/desk/hero@2x.avif 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/hero/desk/hero@1x.webp 1x,
+                ./images/hero/desk/hero@2x.webp 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/hero/desk/hero@1x.jpg 1x,
+                ./images/hero/desk/hero@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/hero/tab/hero@1x.avif 1x,
+                ./images/hero/tab/hero@2x.avif 2x
+              "
+              media="(min-width: 834px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/hero/tab/hero@1x.webp 1x,
+                ./images/hero/tab/hero@2x.webp 2x
+              "
+              media="(min-width: 834px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/hero/tab/hero@1x.jpg 1x,
+                ./images/hero/tab/hero@2x.jpg 2x
+              "
+              media="(min-width: 834px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/hero/mob/hero@1x.avif 1x,
+                ./images/hero/mob/hero@2x.avif 2x
+              "
+              media="(max-width: 833px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/hero/mob/hero@1x.webp 1x,
+                ./images/hero/mob/hero@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/hero/mob/hero@1x.jpg 1x,
+                ./images/hero/mob/hero@2x.jpg 2x
+              "
+              type="image/jpeg"
+            />
+            <img src="./images/hero/mob/hero@1x.jpg" alt="astronaut in space" />
+          </picture>
+        </div>
         <div class="hero-card__info">
           <h2 class="hero-card__title">Space Walking</h2>
 
@@ -218,129 +220,136 @@
         </ul>
       </div>
     </section>
-    <section class="collection container">
-      <h2 class="section__headline">Trending Collection</h2>
-      <p class="section__subtext">
-        Checkout our weekly updated trending collection.
-      </p>
+    <main>
+      <section class="collection container">
+        <h2 class="section__headline">Trending Collection</h2>
+        <p class="section__subtext">
+          Checkout our weekly updated trending collection.
+        </p>
 
-      <ul>
-        <li>
-          <a href="#">
+        <ul class="collections">
+          <li class="collection-card">
             <article>
-              <picture>
-                <source
-                  srcset="
-                    ./images/collection/desk/coll1@1x.avif 1x,
-                    ./images/collection/desk/coll1@2x.avif 2x
-                  "
-                  media="(min-width: 833px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    ./images/collection/desk/coll1@1x.webp 1x,
-                    ./images/collection/desk/coll1@2x.webp 2x
-                  "
-                  media="(min-width: 833px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/collection/desk/coll1@1x.jpg 1x,
-                    ./images/collection/desk/coll1@2x.jpg 2x
-                  "
-                  media="(min-width: 833px)"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="
-                    ./images/collection/mob/coll1@1x.avif 1x,
-                    ./images/collection/mob/coll1@2x.avif 2x
-                  "
-                  media="(max-width: 833px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    ./images/collection/mob/coll1@1x.webp 1x,
-                    ./images/collection/mob/coll1@2x.webp 2x
-                  "
-                  media="(max-width: 833px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/collection/mob/coll1@1x.jpg 1x,
-                    ./images/collection/mob/coll1@2x.jpg 2x
-                  "
-                  media="(max-width: 833px)"
-                  type="image/jpeg"
-                />
-                <img
-                  src="./images/collection/desk/coll1@1x.jpg"
-                  alt="dog in glasses"
-                />
-              </picture>
-              <ul>
-                <li>
-                  <a href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/collection/desk/coll1-1@1x.avif 1x,
-                          ./images/collection/desk/coll1-1@2x.avif 2x
-                        "
-                        media="(min-width: 834px)"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/desk/coll1-1@1x.webp 1x,
-                          ./images/collection/desk/coll1-1@2x.webp 2x
-                        "
-                        media="(min-width: 834px)"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/desk/coll1-1@1x.jpg 1x,
-                          ./images/collection/desk/coll1-1@2x.jpg 2x
-                        "
-                        media="(min-width: 834px)"
-                        type="image/jpeg"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll1-1@1x.avif 1x,
-                          ./images/collection/mob/coll1-1@2x.avif 2x
-                        "
-                        media="(max-width: 833px)"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll1-1@1x.webp 1x,
-                          ./images/collection/mob/coll1-1@2x.webp 2x
-                        "
-                        media="(max-width: 834px)"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll1-1@1x.jpg 1x,
-                          ./images/collection/mob/coll1-1@2x.jpg 2x
-                        "
-                        media="(max-width: 833px)"
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/collection/desk/coll1-1@1x.jpg"
-                        alt="cat in glasses"
-                      /> </picture
-                  ></a>
+              <a href="#"
+                ><div class="collection-card__main-img-thumb">
+                  <picture class="collection-card__img">
+                    <source
+                      srcset="
+                        ./images/collection/desk/coll1@1x.avif 1x,
+                        ./images/collection/desk/coll1@2x.avif 2x
+                      "
+                      media="(min-width: 833px)"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/collection/desk/coll1@1x.webp 1x,
+                        ./images/collection/desk/coll1@2x.webp 2x
+                      "
+                      media="(min-width: 833px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/collection/desk/coll1@1x.jpg 1x,
+                        ./images/collection/desk/coll1@2x.jpg 2x
+                      "
+                      media="(min-width: 833px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/collection/mob/coll1@1x.avif 1x,
+                        ./images/collection/mob/coll1@2x.avif 2x
+                      "
+                      media="(max-width: 833px)"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/collection/mob/coll1@1x.webp 1x,
+                        ./images/collection/mob/coll1@2x.webp 2x
+                      "
+                      media="(max-width: 833px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/collection/mob/coll1@1x.jpg 1x,
+                        ./images/collection/mob/coll1@2x.jpg 2x
+                      "
+                      media="(max-width: 833px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/collection/desk/coll1@1x.jpg"
+                      alt="dog in glasses"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <ul class="collection-card__photos">
+                <li class="collection-card__photo">
+                  <a href="#"
+                    ><div class="collection-card__thumb">
+                      <picture class="collection-card__img">
+                        <source
+                          srcset="
+                            ./images/collection/desk/coll1-1@1x.avif 1x,
+                            ./images/collection/desk/coll1-1@2x.avif 2x
+                          "
+                          media="(min-width: 834px)"
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="
+                            ./images/collection/desk/coll1-1@1x.webp 1x,
+                            ./images/collection/desk/coll1-1@2x.webp 2x
+                          "
+                          media="(min-width: 834px)"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="
+                            ./images/collection/desk/coll1-1@1x.jpg 1x,
+                            ./images/collection/desk/coll1-1@2x.jpg 2x
+                          "
+                          media="(min-width: 834px)"
+                          type="image/jpeg"
+                        />
+                        <source
+                          srcset="
+                            ./images/collection/mob/coll1-1@1x.avif 1x,
+                            ./images/collection/mob/coll1-1@2x.avif 2x
+                          "
+                          media="(max-width: 833px)"
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="
+                            ./images/collection/mob/coll1-1@1x.webp 1x,
+                            ./images/collection/mob/coll1-1@2x.webp 2x
+                          "
+                          media="(max-width: 834px)"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="
+                            ./images/collection/mob/coll1-1@1x.jpg 1x,
+                            ./images/collection/mob/coll1-1@2x.jpg 2x
+                          "
+                          media="(max-width: 833px)"
+                          type="image/jpeg"
+                        />
+                        <img
+                          src="./images/collection/desk/coll1-1@1x.jpg"
+                          alt="cat in glasses"
+                        />
+                      </picture>
+                    </div>
+                  </a>
                 </li>
-                <li>
+                <li class="collection-card__photo">
                   <a href="#">
                     <picture>
                       <source
@@ -398,9 +407,11 @@
                     </picture>
                   </a>
                 </li>
-                <li><a href="#">1025+</a></li>
+                <li class="collection-card__aditional">
+                  <a href="#">1025+</a>
+                </li>
               </ul>
-              <h3>DSGN Animals</h3>
+              <h3 class="collection-card__title">DSGN Animals</h3>
               <div class="artist-card">
                 <a class="artist-card__link" href="./artist">
                   <picture>
@@ -419,125 +430,82 @@
                 >
               </div>
             </article>
-          </a>
-        </li>
-        <li>
-          <a href="#">
+          </li>
+          <li class="collection-card">
             <article>
-              <picture>
-                <source
-                  srcset="
-                    ./images/collection/desk/coll2@1x.avif 1x,
-                    ./images/collection/desk/coll2@2x.avif 2x
-                  "
-                  media="(min-width: 833px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    ./images/collection/desk/coll2@1x.webp 1x,
-                    ./images/collection/desk/coll2@2x.webp 2x
-                  "
-                  media="(min-width: 833px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/collection/desk/coll2@1x.jpg 1x,
-                    ./images/collection/desk/coll2@2x.jpg 2x
-                  "
-                  media="(min-width: 833px)"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="
-                    ./images/collection/mob/coll2@1x.avif 1x,
-                    ./images/collection/mob/coll2@2x.avif 2x
-                  "
-                  media="(max-width: 833px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    ./images/collection/mob/coll2@1x.webp 1x,
-                    ./images/collection/mob/coll2@2x.webp 2x
-                  "
-                  media="(max-width: 833px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/collection/mob/coll2@1x.jpg 1x,
-                    ./images/collection/mob/coll2@2x.jpg 2x
-                  "
-                  media="(max-width: 833px)"
-                  type="image/jpeg"
-                />
-                <img
-                  src="./images/collection/desk/coll2@1x.jpg"
-                  alt="mashrooms"
-                />
-              </picture>
-              <ul>
-                <li>
-                  <a href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/collection/desk/coll2-1@1x.avif 1x,
-                          ./images/collection/desk/coll2-1@2x.avif 2x
-                        "
-                        media="(min-width: 834px)"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/desk/coll2-1@1x.webp 1x,
-                          ./images/collection/desk/coll2-1@2x.webp 2x
-                        "
-                        media="(min-width: 834px)"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/desk/coll2-1@1x.jpg 1x,
-                          ./images/collection/desk/coll2-1@2x.jpg 2x
-                        "
-                        media="(min-width: 834px)"
-                        type="image/jpeg"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll2-1@1x.avif 1x,
-                          ./images/collection/mob/coll2-1@2x.avif 2x
-                        "
-                        media="(max-width: 833px)"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll2-1@1x.webp 1x,
-                          ./images/collection/mob/coll2-1@2x.webp 2x
-                        "
-                        media="(max-width: 834px)"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll2-1@1x.jpg 1x,
-                          ./images/collection/mob/coll2-1@2x.jpg 2x
-                        "
-                        media="(max-width: 833px)"
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/collection/desk/coll2-1@1x.jpg"
-                        alt="mashrooms"
-                      />
-                    </picture>
+              <a href="#"
+                ><div class="collection-card__main-img-thumb">
+                  <picture class="collection-card__img">
+                    <source
+                      srcset="
+                        ./images/collection/desk/coll2@1x.avif 1x,
+                        ./images/collection/desk/coll2@2x.avif 2x
+                      "
+                      media="(min-width: 833px)"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/collection/desk/coll2@1x.webp 1x,
+                        ./images/collection/desk/coll2@2x.webp 2x
+                      "
+                      media="(min-width: 833px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/collection/desk/coll2@1x.jpg 1x,
+                        ./images/collection/desk/coll2@2x.jpg 2x
+                      "
+                      media="(min-width: 833px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/collection/desk/coll2@1x.jpg"
+                      alt="magic mashrooms"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <ul class="collection-card__photos">
+                <li class="collection-card__photo">
+                  <a href="#"
+                    ><div class="collection-card__thumb">
+                      <picture class="collection-card__img">
+                        <source
+                          srcset="
+                            ./images/collection/desk/coll2-1@1x.avif 1x,
+                            ./images/collection/desk/coll2-1@2x.avif 2x
+                          "
+                          media="(min-width: 833px)"
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="
+                            ./images/collection/desk/coll2-1@1x.webp 1x,
+                            ./images/collection/desk/coll2-1@2x.webp 2x
+                          "
+                          media="(min-width: 833px)"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="
+                            ./images/collection/desk/coll2-1@1x.jpg 1x,
+                            ./images/collection/desk/coll2-1@2x.jpg 2x
+                          "
+                          media="(min-width: 833px)"
+                          type="image/jpeg"
+                        />
+                        <img
+                          src="./images/collection/desk/coll2-1@1x.jpg"
+                          alt="magic mashrooms"
+                        />
+                      </picture>
+                    </div>
                   </a>
                 </li>
-                <li>
+                <li class="collection-card__photo">
                   <a href="#">
                     <picture>
                       <source
@@ -545,7 +513,7 @@
                           ./images/collection/desk/coll2-2@1x.avif 1x,
                           ./images/collection/desk/coll2-2@2x.avif 2x
                         "
-                        media="(min-width: 834px)"
+                        media="(min-width: 833px)"
                         type="image/avif"
                       />
                       <source
@@ -553,7 +521,7 @@
                           ./images/collection/desk/coll2-2@1x.webp 1x,
                           ./images/collection/desk/coll2-2@2x.webp 2x
                         "
-                        media="(min-width: 834px)"
+                        media="(min-width: 833px)"
                         type="image/webp"
                       />
                       <source
@@ -561,43 +529,22 @@
                           ./images/collection/desk/coll2-2@1x.jpg 1x,
                           ./images/collection/desk/coll2-2@2x.jpg 2x
                         "
-                        media="(min-width: 834px)"
+                        media="(min-width: 833px)"
                         type="image/jpeg"
                       />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll2-2@1x.avif 1x,
-                          ./images/collection/mob/coll2-2@2x.avif 2x
-                        "
-                        media="(max-width: 833px)"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll2-2@1x.webp 1x,
-                          ./images/collection/mob/coll2-2@2x.webp 2x
-                        "
-                        media="(max-width: 834px)"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll2-2@1x.jpg 1x,
-                          ./images/collection/mob/coll2-2@2x.jpg 2x
-                        "
-                        media="(max-width: 833px)"
-                        type="image/jpeg"
-                      />
+
                       <img
                         src="./images/collection/desk/coll2-2@1x.jpg"
-                        alt="mashrooms"
+                        alt="magic mashrooms"
                       />
                     </picture>
                   </a>
                 </li>
-                <li><a href="#">1025+</a></li>
+                <li class="collection-card__aditional">
+                  <a href="#">1025+</a>
+                </li>
               </ul>
-              <h3>Magic Mushrooms</h3>
+              <h3 class="collection-card__title">Magic Mushrooms</h3>
               <div class="artist-card">
                 <a class="artist-card__link" href="./artist">
                   <picture>
@@ -616,125 +563,82 @@
                 >
               </div>
             </article>
-          </a>
-        </li>
-        <li>
-          <a href="#">
+          </li>
+          <li class="collection-card">
             <article>
-              <picture>
-                <source
-                  srcset="
-                    ./images/collection/desk/coll3@1x.avif 1x,
-                    ./images/collection/desk/coll3@2x.avif 2x
-                  "
-                  media="(min-width: 833px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    ./images/collection/desk/coll3@1x.webp 1x,
-                    ./images/collection/desk/coll3@2x.webp 2x
-                  "
-                  media="(min-width: 833px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/collection/desk/coll3@1x.jpg 1x,
-                    ./images/collection/desk/coll3@2x.jpg 2x
-                  "
-                  media="(min-width: 833px)"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="
-                    ./images/collection/mob/coll3@1x.avif 1x,
-                    ./images/collection/mob/coll3@2x.avif 2x
-                  "
-                  media="(max-width: 833px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    ./images/collection/mob/coll3@1x.webp 1x,
-                    ./images/collection/mob/coll3@2x.webp 2x
-                  "
-                  media="(max-width: 833px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/collection/mob/coll3@1x.jpg 1x,
-                    ./images/collection/mob/coll3@2x.jpg 2x
-                  "
-                  media="(max-width: 833px)"
-                  type="image/jpeg"
-                />
-                <img
-                  src="./images/collection/desk/coll3@1x.jpg"
-                  alt="mashrooms"
-                />
-              </picture>
-              <ul>
-                <li>
-                  <a href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/collection/desk/coll3-1@1x.avif 1x,
-                          ./images/collection/desk/coll3-1@2x.avif 2x
-                        "
-                        media="(min-width: 834px)"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/desk/coll3-1@1x.webp 1x,
-                          ./images/collection/desk/coll3-1@2x.webp 2x
-                        "
-                        media="(min-width: 834px)"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/desk/coll3-1@1x.jpg 1x,
-                          ./images/collection/desk/coll3-1@2x.jpg 2x
-                        "
-                        media="(min-width: 834px)"
-                        type="image/jpeg"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll3-1@1x.avif 1x,
-                          ./images/collection/mob/coll3-1@2x.avif 2x
-                        "
-                        media="(max-width: 833px)"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll3-1@1x.webp 1x,
-                          ./images/collection/mob/coll3-1@2x.webp 2x
-                        "
-                        media="(max-width: 834px)"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll3-1@1x.jpg 1x,
-                          ./images/collection/mob/coll3-1@2x.jpg 2x
-                        "
-                        media="(max-width: 833px)"
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/collection/desk/coll3-1@1x.jpg"
-                        alt="Disco Machines"
-                      />
-                    </picture>
+              <a href="#"
+                ><div class="collection-card__main-img-thumb">
+                  <picture class="collection-card__img">
+                    <source
+                      srcset="
+                        ./images/collection/desk/coll3@1x.avif 1x,
+                        ./images/collection/desk/coll3@2x.avif 2x
+                      "
+                      media="(min-width: 833px)"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/collection/desk/coll3@1x.webp 1x,
+                        ./images/collection/desk/coll3@2x.webp 2x
+                      "
+                      media="(min-width: 833px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/collection/desk/coll3@1x.jpg 1x,
+                        ./images/collection/desk/coll3@2x.jpg 2x
+                      "
+                      media="(min-width: 833px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/collection/desk/coll3@1x.jpg"
+                      alt="BeKind2Robots"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <ul class="collection-card__photos">
+                <li class="collection-card__photo">
+                  <a href="#"
+                    ><div class="collection-card__thumb">
+                      <picture class="collection-card__img">
+                        <source
+                          srcset="
+                            ./images/collection/desk/coll3-1@1x.avif 1x,
+                            ./images/collection/desk/coll3-1@2x.avif 2x
+                          "
+                          media="(min-width: 833px)"
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="
+                            ./images/collection/desk/coll3-1@1x.webp 1x,
+                            ./images/collection/desk/coll3-1@2x.webp 2x
+                          "
+                          media="(min-width: 833px)"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="
+                            ./images/collection/desk/coll3-1@1x.jpg 1x,
+                            ./images/collection/desk/coll3-1@2x.jpg 2x
+                          "
+                          media="(min-width: 833px)"
+                          type="image/jpeg"
+                        />
+                        <img
+                          src="./images/collection/desk/coll3-1@1x.jpg"
+                          alt="magic mashrooms"
+                        />
+                      </picture>
+                    </div>
                   </a>
                 </li>
-                <li>
+                <li class="collection-card__photo">
                   <a href="#">
                     <picture>
                       <source
@@ -742,15 +646,15 @@
                           ./images/collection/desk/coll3-2@1x.avif 1x,
                           ./images/collection/desk/coll3-2@2x.avif 2x
                         "
-                        media="(min-width: 834px)"
+                        media="(min-width: 833px)"
                         type="image/avif"
                       />
                       <source
                         srcset="
-                          ./images/collection/desk/coll3-2@1x.webp 1x,
-                          ./images/collection/desk/coll3-2@2x.webp 2x
+                          ./images/collection/desk/coll2-2@1x.webp 1x,
+                          ./images/collection/desk/coll2-2@2x.webp 2x
                         "
-                        media="(min-width: 834px)"
+                        media="(min-width: 833px)"
                         type="image/webp"
                       />
                       <source
@@ -758,43 +662,22 @@
                           ./images/collection/desk/coll3-2@1x.jpg 1x,
                           ./images/collection/desk/coll3-2@2x.jpg 2x
                         "
-                        media="(min-width: 834px)"
+                        media="(min-width: 833px)"
                         type="image/jpeg"
                       />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll3-2@1x.avif 1x,
-                          ./images/collection/mob/coll3-2@2x.avif 2x
-                        "
-                        media="(max-width: 833px)"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll3-2@1x.webp 1x,
-                          ./images/collection/mob/coll3-2@2x.webp 2x
-                        "
-                        media="(max-width: 834px)"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/collection/mob/coll3-2@1x.jpg 1x,
-                          ./images/collection/mob/coll3-2@2x.jpg 2x
-                        "
-                        media="(max-width: 833px)"
-                        type="image/jpeg"
-                      />
+
                       <img
                         src="./images/collection/desk/coll3-2@1x.jpg"
-                        alt="Disco Machines"
+                        alt="magic mashrooms"
                       />
                     </picture>
                   </a>
                 </li>
-                <li><a href="#">1025+</a></li>
+                <li class="collection-card__aditional">
+                  <a href="#">1025+</a>
+                </li>
               </ul>
-              <h3>Disco Machines</h3>
+              <h3 class="collection-card__title">Disco Machines</h3>
               <div class="artist-card">
                 <a class="artist-card__link" href="./artist">
                   <picture>
@@ -806,16 +689,16 @@
                     />
                     <img
                       src="./images/collection/avatar/avatar3@1x.png"
-                      alt="BeKind2Robots avatar"
+                      alt="Shroomie avatar"
                     />
                   </picture>
                   <h3 class="artist-card__name">BeKind2Robots</h3></a
                 >
               </div>
             </article>
-          </a>
-        </li>
-      </ul>
-    </section>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
