@@ -22,10 +22,10 @@
 }
 
 .collection-card__photos {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-items: center;
 
   margin-bottom: 15px;
 }
@@ -62,20 +62,6 @@
   }
 }
 
-.collection-card__hero-img-thumb {
-  width: 315px;
-  height: 206px;
-
-  @media screen and (width > 833px) {
-    width: 330px;
-    height: 220px;
-  }
-
-  @media screen and (width > 1279px) {
-    width: 510px;
-    height: 400px;
-  }
-}
 .collection-card__photo,
 .collection-card__aditional,
 .collection-card__main-img-thumb {

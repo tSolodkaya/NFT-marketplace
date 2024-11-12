@@ -1,0 +1,28 @@
+.creators {
+  @extend %section;
+}
+
+.creators__headline {
+  @extend %headline;
+}
+
+.creators__subtext {
+  @extend %subtext;
+  @media screen and (width > 833px) {
+    margin-bottom: 0;
+  }
+}
+
+.creators__titles-btn-wrap {
+  @media screen and (width > 833px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  margin-bottom: 40px;
+
+  @media screen and (width > 1279px) {
+    margin-bottom: 60px;
+  }
+}

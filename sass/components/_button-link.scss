@@ -9,29 +9,65 @@
   color: $text-color;
   text-align: center;
 
-  margin-bottom: 40px;
-
-  &--hero-padding {
-    @media screen and (width < 834px) {
-      padding: 20px 50px;
-    }
-
+  &--padding-50 {
     padding: 20px 50px;
   }
 
-  &--header-padding {
+  &--padding-30 {
     padding: 19px 30px;
   }
 
-  @media screen and (width > 833px) {
-    margin-bottom: 20px;
-  }
-
-  @media screen and (width > 1279px) {
-    margin-bottom: 30px;
+  &--bg-transparent {
+    background-color: transparent;
+    border: 1px solid $call-to-action-color;
   }
 }
 
 .button {
   display: inline-block;
+  margin-bottom: 40px;
+
+  &__hero {
+    display: block;
+  }
+
+  @media screen and (width < 834px) {
+    &--mob-visibility {
+      display: block;
+    }
+
+    &--tab-visibility {
+      display: none;
+    }
+  }
+
+  @media screen and (width > 833px) {
+    margin-bottom: 20px;
+
+    &--mob-visibility {
+      display: none;
+    }
+
+    &--tab-visibility {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (width > 1279px) {
+    margin-bottom: 30px;
+  }
+
+  &__creators {
+    margin-bottom: 0;
+  }
+}
+
+.button-link__icon {
+  &--white {
+    fill: $text-color;
+  }
+
+  &--action-color {
+    fill: $call-to-action-color;
+  }
 }

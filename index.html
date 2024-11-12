@@ -48,7 +48,7 @@
           <li><a href="#">Connect a wallet</a></li>
         </ul>
         <div class="button">
-          <a class="button-link button-link--header-padding" href="#">
+          <a class="button-link button-link--padding-30" href="#">
             <svg width="20" height="20">
               <use href="./images/icons.svg#i-User"></use></svg
             >Sign Up</a
@@ -65,8 +65,12 @@
         </p>
         <div class="hero__btns-additional hero__btns-additional--tab">
           <div class="button">
-            <a class="button-link button-link--hero-padding" href="#">
-              <svg width="20" height="20">
+            <a class="button-link button-link--padding-50" href="#">
+              <svg
+                class="button-link__icon button-link__icon--white"
+                width="20"
+                height="20"
+              >
                 <use href="./images/icons.svg#i-rocket"></use></svg
               >Get Started
             </a>
@@ -189,15 +193,20 @@
         </div>
       </article>
       <div class="hero__btns-additional hero__btns-additional--mob">
-        <a
-          class="button-link button-link--hero-padding button-link--mob-margin"
-          href="#"
-        >
-          <svg width="20" height="20">
-            <use href="./images/icons.svg#i-rocket"></use></svg
-          >Get Started
-        </a>
-
+        <div class="button button__hero">
+          <a
+            class="button-link button-link--padding-50 button-link--mob-margin"
+            href="#"
+          >
+            <svg
+              class="button-link__icon button-link__icon--white"
+              width="20"
+              height="20"
+            >
+              <use href="./images/icons.svg#i-rocket"></use></svg
+            >Get Started
+          </a>
+        </div>
         <ul class="additionals">
           <li class="additional">
             <a href="#">
@@ -698,6 +707,383 @@
             </article>
           </li>
         </ul>
+      </section>
+      <section class="creators container">
+        <div class="creators__titles-btn-wrap">
+          <div>
+            <h2 class="creators__headline">Top creators</h2>
+            <p class="creators__subtext">
+              Checkout Top Rated Creators on the NFT Marketplace
+            </p>
+          </div>
+          <div class="button button__creators button--tab-visibility">
+            <a
+              class="button-link button-link--padding-50 button-link--bg-transparent"
+              href="./rankings"
+            >
+              <svg
+                class="button-link__icon button-link__icon--action-color"
+                width="20"
+                height="20"
+              >
+                <use href="./images/icons.svg#i-rocket"></use></svg
+              >View Rankings</a
+            >
+          </div>
+        </div>
+        <ul class="creators__list">
+          <li class="creator">
+            <a class="creator__link" href="#">
+              <p class="creator__number">1</p>
+              <picture class="creator__img">
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar-desk-1@1x.png 1x,
+                    ./images/creators/avatar/avatar-desk-1@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar1@1x.png 1x,
+                    ./images/creators/avatar/avatar1@2x.png 2x
+                  "
+                  media="(max-width: 1279px)"
+                />
+                <img
+                  src="./images/creators/avatar/avatar1@1x.png"
+                  alt="Keepitreal avatar"
+                />
+              </picture>
+              <div class="creator__meta">
+                <h3 class="creator__name">Keepitreal</h3>
+                <p class="creator__total">
+                  Total Sales:
+                  <span class="creator__total-value">34.53 ETH</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="creator">
+            <a class="creator__link" href="#">
+              <p class="creator__number">2</p>
+              <picture class="creator__img">
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar-desk-2@1x.png 1x,
+                    ./images/creators/avatar/avatar-desk-2@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar2@1x.png 1x,
+                    ./images/creators/avatar/avatar2@2x.png 2x
+                  "
+                  media="(max-width: 1279px)"
+                />
+
+                <img
+                  src="./images/creators/avatar/avatar2@1x.png"
+                  alt="DigiLab avatar"
+                />
+              </picture>
+              <div class="creator__meta">
+                <h3 class="creator__name">DigiLab</h3>
+                <p class="creator__total">
+                  Total Sales:
+                  <span class="creator__total-value">32.13 ETH</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="creator">
+            <a class="creator__link" href="#">
+              <p class="creator__number">3</p>
+              <picture class="creator__img">
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar-desk-3@1x.png 1x,
+                    ./images/creators/avatar/avatar-desk-3@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar3@1x.png 1x,
+                    ./images/creators/avatar/avatar3@2x.png 2x
+                  "
+                  media="(max-width: 1279px)"
+                />
+                <img
+                  src="./images/creators/avatar/avatar3@1x.png"
+                  alt="GravityOne avatar"
+                />
+              </picture>
+              <div class="creator__meta">
+                <h3 class="creator__name">GravityOne</h3>
+                <p class="creator__total">
+                  Total Sales:
+                  <span class="creator__total-value">28.93 ETH</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="creator">
+            <a class="creator__link" href="#">
+              <p class="creator__number">4</p>
+              <picture class="creator__img">
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar-desk-4@1x.png 1x,
+                    ./images/creators/avatar/avatar-desk-4@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar4@1x.png 1x,
+                    ./images/creators/avatar/avatar4@2x.png 2x
+                  "
+                  media="(max-width: 1279px)"
+                />
+                <img
+                  src="./images/creators/avatar/avatar4@1x.png"
+                  alt="Juanie avatar"
+                />
+              </picture>
+              <div class="creator__meta">
+                <h3 class="creator__name">Juanie</h3>
+                <p class="creator__total">
+                  Total Sales:
+                  <span class="creator__total-value">25.30 ETH</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="creator">
+            <a class="creator__link" href="#">
+              <p class="creator__number">5</p>
+              <picture class="creator__img">
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar-desk-5@1x.png 1x,
+                    ./images/creators/avatar/avatar-desk-5@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar5@1x.png 1x,
+                    ./images/creators/avatar/avatar5@2x.png 2x
+                  "
+                  media="(max-width: 1279px)"
+                />
+                <img
+                  src="./images/creators/avatar/avatar5@1x.png"
+                  alt="BlueWhale avatar"
+                />
+              </picture>
+              <div class="creator__meta">
+                <h3 class="creator__name">BlueWhale</h3>
+                <p class="creator__total">
+                  Total Sales:
+                  <span class="creator__total-value">22.22 ETH</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="creator">
+            <a class="creator__link" href="#">
+              <p class="creator__number">6</p>
+              <picture class="creator__img">
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar-desk-6@1x.png 1x,
+                    ./images/creators/avatar/avatar-desk-6@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar6@1x.png 1x,
+                    ./images/creators/avatar/avatar6@2x.png 2x
+                  "
+                  media="(max-width: 1279px)"
+                />
+                <img
+                  src="./images/creators/avatar/avatar6@1x.png"
+                  alt="mr fox avatar"
+                />
+              </picture>
+              <div class="creator__meta">
+                <h3 class="creator__name">mr fox</h3>
+                <p class="creator__total">
+                  Total Sales:
+                  <span class="creator__total-value">34.53 ETH</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="creator">
+            <a class="creator__link" href="#">
+              <p class="creator__number">7</p>
+              <picture class="creator__img">
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar7@1x.png 1x,
+                    ./images/creators/avatar/avatar7@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/creators/avatar/avatar7@1x.png"
+                  alt="Shroomie avatar"
+                />
+              </picture>
+              <div class="creator__meta">
+                <h3 class="creator__name">Shroomie</h3>
+                <p class="creator__total">
+                  Total Sales:
+                  <span class="creator__total-value">34.53 ETH</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="creator">
+            <a class="creator__link" href="#">
+              <p class="creator__number">8</p>
+              <picture class="creator__img">
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar8@1x.png 1x,
+                    ./images/creators/avatar/avatar8@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/creators/avatar/avatar8@1x.png"
+                  alt="robotica avatar"
+                />
+              </picture>
+              <div class="creator__meta">
+                <h3 class="creator__name">robotica</h3>
+                <p class="creator__total">
+                  Total Sales:
+                  <span class="creator__total-value">34.53 ETH</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="creator">
+            <a class="creator__link" href="#">
+              <p class="creator__number">9</p>
+              <picture class="creator__img">
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar9@1x.png 1x,
+                    ./images/creators/avatar/avatar9@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/creators/avatar/avatar9@1x.png"
+                  alt="RustyRobot avatar"
+                />
+              </picture>
+              <div class="creator__meta">
+                <h3 class="creator__name">RustyRobot</h3>
+                <p class="creator__total">
+                  Total Sales:
+                  <span class="creator__total-value">34.53 ETH</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="creator">
+            <a class="creator__link" href="#">
+              <p class="creator__number">10</p>
+              <picture class="creator__img">
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar10@1x.png 1x,
+                    ./images/creators/avatar/avatar10@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/creators/avatar/avatar10@1x.png"
+                  alt="animakid avatar"
+                />
+              </picture>
+              <div class="creator__meta">
+                <h3 class="creator__name">animakid</h3>
+                <p class="creator__total">
+                  Total Sales:
+                  <span class="creator__total-value">34.53 ETH</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="creator">
+            <a class="creator__link" href="#">
+              <p class="creator__number">11</p>
+              <picture class="creator__img">
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar11@1x.png 1x,
+                    ./images/creators/avatar/avatar11@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/creators/avatar/avatar11@1x.png"
+                  alt="Dotgu avatar"
+                />
+              </picture>
+              <div class="creator__meta">
+                <h3 class="creator__name">Dotgu</h3>
+                <p class="creator__total">
+                  Total Sales:
+                  <span class="creator__total-value">34.53 ETH</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="creator">
+            <a class="creator__link" href="#">
+              <p class="creator__number">12</p>
+              <picture class="creator__img">
+                <source
+                  srcset="
+                    ./images/creators/avatar/avatar12@1x.png 1x,
+                    ./images/creators/avatar/avatar12@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/creators/avatar/avatar12@1x.png"
+                  alt="Ghiblier avatar"
+                />
+              </picture>
+              <div class="creator__meta">
+                <h3 class="creator__name">Ghiblier</h3>
+                <p class="creator__total">
+                  Total Sales:
+                  <span class="creator__total-value">34.53 ETH</span>
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="button button--mob-visibility">
+          <a
+            class="button-link button-link--padding-50 button-link--bg-transparent"
+            href="./rankings"
+          >
+            <svg
+              class="button-link__icon button-link__icon--action-color"
+              width="20"
+              height="20"
+            >
+              <use href="./images/icons.svg#i-rocket"></use></svg
+            >View Rankings</a
+          >
+        </div>
       </section>
     </main>
   </body>

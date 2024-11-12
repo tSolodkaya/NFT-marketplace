@@ -209,14 +209,14 @@ button {
   cursor: pointer;
 }
 
-.collection, .hero {
+.creators, .collection, .hero {
   padding-top: 40px;
   padding-bottom: 40px;
   padding-right: 30px;
   padding-left: 30px;
 }
 @media screen and (width > 833px) {
-  .collection, .hero {
+  .creators, .collection, .hero {
     padding-top: 80px;
     padding-bottom: 80px;
     padding-right: 72px;
@@ -224,30 +224,30 @@ button {
   }
 }
 @media screen and (width > 1279px) {
-  .collection, .hero {
+  .creators, .collection, .hero {
     padding-right: 115px;
     padding-left: 115px;
   }
 }
 
-.section__headline {
+.creators__headline, .section__headline {
   margin-bottom: 10px;
   font-size: 28px;
 }
 @media screen and (width > 1279px) {
-  .section__headline {
+  .creators__headline, .section__headline {
     font-size: 38px;
     line-height: 1.2;
   }
 }
 
-.section__subtext {
+.creators__subtext, .section__subtext {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 40px;
 }
 @media screen and (width > 1279px) {
-  .section__subtext {
+  .creators__subtext, .section__subtext {
     margin-bottom: 60px;
     font-size: 22px;
     font-weight: 400;
@@ -311,32 +311,58 @@ button {
   border-radius: 20px;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 40px;
 }
-.button-link--hero-padding {
+.button-link--padding-50 {
   padding: 20px 50px;
 }
-@media screen and (width < 834px) {
-  .button-link--hero-padding {
-    padding: 20px 50px;
-  }
-}
-.button-link--header-padding {
+.button-link--padding-30 {
   padding: 19px 30px;
 }
-@media screen and (width > 833px) {
-  .button-link {
-    margin-bottom: 20px;
-  }
-}
-@media screen and (width > 1279px) {
-  .button-link {
-    margin-bottom: 30px;
-  }
+.button-link--bg-transparent {
+  background-color: transparent;
+  border: 1px solid #a259ff;
 }
 
 .button {
   display: inline-block;
+  margin-bottom: 40px;
+}
+.button__hero {
+  display: block;
+}
+@media screen and (width < 834px) {
+  .button--mob-visibility {
+    display: block;
+  }
+  .button--tab-visibility {
+    display: none;
+  }
+}
+@media screen and (width > 833px) {
+  .button {
+    margin-bottom: 20px;
+  }
+  .button--mob-visibility {
+    display: none;
+  }
+  .button--tab-visibility {
+    display: inline-block;
+  }
+}
+@media screen and (width > 1279px) {
+  .button {
+    margin-bottom: 30px;
+  }
+}
+.button__creators {
+  margin-bottom: 0;
+}
+
+.button-link__icon--white {
+  fill: #ffffff;
+}
+.button-link__icon--action-color {
+  fill: #a259ff;
 }
 
 .menu,
@@ -575,17 +601,12 @@ button {
 }
 
 .collection-card__photos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-items: center;
   margin-bottom: 15px;
 }
 
@@ -625,23 +646,6 @@ button {
   }
 }
 
-.collection-card__hero-img-thumb {
-  width: 315px;
-  height: 206px;
-}
-@media screen and (width > 833px) {
-  .collection-card__hero-img-thumb {
-    width: 330px;
-    height: 220px;
-  }
-}
-@media screen and (width > 1279px) {
-  .collection-card__hero-img-thumb {
-    width: 510px;
-    height: 400px;
-  }
-}
-
 .collection-card__photo,
 .collection-card__aditional,
 .collection-card__main-img-thumb {
@@ -677,4 +681,161 @@ button {
 .collection-card__title {
   margin-bottom: 10px;
   font-size: 22px;
+}
+
+@media screen and (width > 833px) {
+  .creators__subtext {
+    margin-bottom: 0;
+  }
+}
+
+.creators__titles-btn-wrap {
+  margin-bottom: 40px;
+}
+@media screen and (width > 833px) {
+  .creators__titles-btn-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+@media screen and (width > 1279px) {
+  .creators__titles-btn-wrap {
+    margin-bottom: 60px;
+  }
+}
+
+.creators__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media screen and (width < 834px) {
+  .creators__list {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (width > 833px) {
+  .creators__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media screen and (width > 1279px) {
+  .creators__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.creator {
+  position: relative;
+  padding: 20px;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+}
+@media screen and (width < 833px) {
+  .creator:nth-child(n+6) {
+    display: none;
+  }
+}
+@media screen and (width > 833px) and (width < 1280px) {
+  .creator:nth-child(n+7) {
+    display: none;
+  }
+}
+
+.creator__number {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #2b2b2b;
+  color: #858584;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 400;
+}
+@media screen and (width > 1279px) {
+  .creator__number {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.creator__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (width > 1279px) {
+  .creator__link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.creator__img {
+  width: 60px;
+  height: 60px;
+}
+@media screen and (width > 1279px) {
+  .creator__img {
+    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.creator__meta {
+  text-align: start;
+}
+@media screen and (width > 1279px) {
+  .creator__meta {
+    text-align: center;
+  }
+}
+
+.creator__name {
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+
+.creator__total {
+  color: #858584;
+  font-weight: 400;
+}
+
+.creator__total-value {
+  margin-left: 5px;
+  color: #ffffff;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
