@@ -1,0 +1,9 @@
+.categories {
+  @extend %section;
+}
+
+.section__headline {
+  @extend %headline;
+
+  margin-bottom: 40px;
+}
