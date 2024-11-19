@@ -1,0 +1,60 @@
+.discoveries {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+
+  @media screen and (width > 833px) {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    justify-items: center;
+    column-gap: 30px;
+  }
+
+  @media screen and (width > 1279px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.discover-card {
+  width: 315px;
+  border-radius: 22px;
+  background-color: $background-secondary;
+
+  @media screen and (width > 833px) and (width < 1280px) {
+    width: 330px;
+    &:nth-child(n + 3) {
+      display: none;
+    }
+  }
+
+  @media screen and (width > 1279px) {
+    width: 330px;
+  }
+}
+
+.discover-card__img-thumb {
+  width: 315px;
+  height: 238px;
+
+  @media screen and (width > 833px) {
+    width: 330px;
+    height: 295px;
+  }
+
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  overflow: hidden;
+}
+
+.discover-card__link {
+  text-align: start;
+}
+
+.discover-card__meta {
+  padding: 20px 20px 25px 20px;
+}
+
+.discover-card__title {
+  margin-bottom: 5px;
+  font-size: 22px;
+}

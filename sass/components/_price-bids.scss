@@ -1,0 +1,17 @@
+.price-bids {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-bids__value,
+.price-bids__prop {
+  font-family: $secondary-font-family;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.price-bids__prop {
+  margin-bottom: 8px;
+  color: $caption-label-text;
+}
