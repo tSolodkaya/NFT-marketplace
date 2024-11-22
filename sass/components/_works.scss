@@ -1,0 +1,11 @@
+.works {
+  @extend %section;
+}
+
+.works__headline {
+  @extend %headline;
+}
+
+.works__subtext {
+  @extend %subtext;
+}

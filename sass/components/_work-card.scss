@@ -1,0 +1,77 @@
+.work-card__thumb {
+  width: 100px;
+  height: 100px;
+
+  @media screen and (width > 833px) {
+    width: 160px;
+    height: 160px;
+
+    margin-bottom: 20px;
+  }
+
+  @media screen and (width > 1279px) {
+    width: 250px;
+    height: 250px;
+  }
+}
+.works__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+
+  @media screen and (width > 833px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+
+.work-card {
+  @media screen and (width < 834px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  width: 315px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: $background-secondary;
+
+  @media screen and (width > 833px) {
+    width: 210px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (width > 1279px) {
+    width: 330px;
+    padding: 10px 30px 30px 30px;
+  }
+}
+
+.work-card__meta {
+  @media screen and (width < 834px) {
+    width: 155px;
+  }
+
+  @media screen and (width > 833px) {
+    text-align: center;
+  }
+}
+
+.work-card__title {
+  margin-bottom: 10px;
+  font-size: 16px;
+
+  @media screen and (width > 1279px) {
+    font-size: 22px;
+  }
+}
+
+.work-card__desc {
+  font-size: 12px;
+  font-weight: 400;
+
+  @media screen and (width > 1279px) {
+    font-size: 16px;
+  }
+}

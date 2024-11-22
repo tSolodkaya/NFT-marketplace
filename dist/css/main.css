@@ -211,14 +211,14 @@ button {
   cursor: pointer;
 }
 
-.heightlight-wrap, .discover, .categories, .creators, .collection, .hero {
+.works, .heightlight-wrap, .discover, .categories, .creators, .collection, .hero {
   padding-top: 40px;
   padding-bottom: 40px;
   padding-right: 30px;
   padding-left: 30px;
 }
 @media screen and (width > 833px) {
-  .heightlight-wrap, .discover, .categories, .creators, .collection, .hero {
+  .works, .heightlight-wrap, .discover, .categories, .creators, .collection, .hero {
     padding-top: 80px;
     padding-bottom: 80px;
     padding-right: 72px;
@@ -226,30 +226,30 @@ button {
   }
 }
 @media screen and (width > 1279px) {
-  .heightlight-wrap, .discover, .categories, .creators, .collection, .hero {
+  .works, .heightlight-wrap, .discover, .categories, .creators, .collection, .hero {
     padding-right: 115px;
     padding-left: 115px;
   }
 }
 
-.creators__headline, .section__headline {
+.works__headline, .creators__headline, .section__headline {
   margin-bottom: 10px;
   font-size: 28px;
 }
 @media screen and (width > 1279px) {
-  .creators__headline, .section__headline {
+  .works__headline, .creators__headline, .section__headline {
     font-size: 38px;
     line-height: 1.2;
   }
 }
 
-.creators__subtext, .section__subtext {
+.works__subtext, .creators__subtext, .section__subtext {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 40px;
 }
 @media screen and (width > 1279px) {
-  .creators__subtext, .section__subtext {
+  .works__subtext, .creators__subtext, .section__subtext {
     margin-bottom: 60px;
     font-size: 22px;
     font-weight: 400;
@@ -1135,4 +1135,99 @@ button {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+}
+
+.work-card__thumb {
+  width: 100px;
+  height: 100px;
+}
+@media screen and (width > 833px) {
+  .work-card__thumb {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (width > 1279px) {
+  .work-card__thumb {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.works__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+@media screen and (width > 833px) {
+  .works__cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+
+.work-card {
+  width: 315px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+}
+@media screen and (width < 834px) {
+  .work-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (width > 833px) {
+  .work-card {
+    width: 210px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (width > 1279px) {
+  .work-card {
+    width: 330px;
+    padding: 10px 30px 30px 30px;
+  }
+}
+
+@media screen and (width < 834px) {
+  .work-card__meta {
+    width: 155px;
+  }
+}
+@media screen and (width > 833px) {
+  .work-card__meta {
+    text-align: center;
+  }
+}
+
+.work-card__title {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+@media screen and (width > 1279px) {
+  .work-card__title {
+    font-size: 22px;
+  }
+}
+
+.work-card__desc {
+  font-size: 12px;
+  font-weight: 400;
+}
+@media screen and (width > 1279px) {
+  .work-card__desc {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */

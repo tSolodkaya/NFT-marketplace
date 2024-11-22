@@ -1,5 +1,6 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+
 <symbol id="i-marketplace" viewBox="0 0 305 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M11.398 22.168h0.603v-21.254h4.425v23.467h-8.649l-2.749-21.254h-0.603v21.254h-4.425v-23.467h8.649l2.749 21.254z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M21.432 0.914h15.019v4.224h-10.594v5.364h10.392v4.224h-10.392v9.655h-4.425v-23.467z"></path>
