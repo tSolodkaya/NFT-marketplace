@@ -21,6 +21,11 @@
     background-color: transparent;
     border: 1px solid $call-to-action-color;
   }
+
+  &--bg-white {
+    background-color: $text-color;
+    color: $background-color;
+  }
 }
 
 .button {
@@ -42,8 +47,7 @@
   }
 
   @media screen and (width > 833px) {
-    margin-bottom: 20px;
-
+    margin-bottom: 0;
     &--mob-visibility {
       display: none;
     }

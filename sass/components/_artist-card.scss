@@ -10,4 +10,13 @@
   &__discover {
     margin-bottom: 25px;
   }
+
+  &__heightlight {
+    margin-bottom: 30px;
+  }
+  &--bg-dark {
+    background-color: $background-color;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
 }

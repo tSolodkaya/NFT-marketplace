@@ -1,0 +1,40 @@
+.auction {
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(5px);
+
+  font-family: $secondary-font-family;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
+
+  @media screen and (width < 834px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (width > 833px) {
+    display: inline-block;
+  }
+}
+
+.auction__call {
+  margin-bottom: 10px;
+}
+
+.auction__time {
+  display: block;
+}
+
+.auction__time-div,
+.auction__time {
+  font-family: $secondary-font-family;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.auction__hours-wrap {
+  display: flex;
+  gap: 10px;
+}

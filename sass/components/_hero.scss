@@ -49,6 +49,7 @@
 
 .hero__btns-additional {
   display: none;
+
   @media screen and (width > 833px) {
     &--tab {
       display: block;
@@ -73,6 +74,7 @@
 .additional {
   min-width: 85px;
   @media screen and (width > 833px) {
+    margin-top: 20px;
     min-width: 90px;
   }
 

@@ -1,0 +1,53 @@
+.hightlight__banner {
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 593px;
+
+  @media screen and (width < 834px) {
+    padding-top: 80px;
+  }
+
+  @media screen and (width > 833px) {
+    padding-top: 200px;
+    height: 630px;
+  }
+
+  @media screen and (width > 1279px) {
+    height: 640px;
+  }
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-image: $background-gradient,
+    url("../../images/hightligt/hight.jpg");
+  background-image: $background-gradient,
+    -webkit-image-set(url("../../images/hightligt/hight.avif"), url("../../images/hightligt/hight.webp"), url("../../images/hightligt/hight.jpg"));
+  background-image: $background-gradient,
+    image-set(
+      url("../../images/hightligt/hight.avif") type("image/avif"),
+      url("../../images/hightligt/hight.webp") type("image/webp"),
+      url("../../images/hightligt/hight.jpg") type("image/jpeg")
+    );
+}
+
+.heightlight-wrap {
+  @extend %section;
+
+  @media screen and (width > 833px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+
+.hightlight__headline {
+  font-size: 38px;
+  line-height: 120%;
+  margin-bottom: 30px;
+
+  @media screen and (width > 833px) {
+    font-size: 51px;
+    line-height: 110%;
+  }
+}
