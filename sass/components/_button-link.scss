@@ -7,6 +7,7 @@
   background-color: $call-to-action-color;
   border-radius: 20px;
   color: $text-color;
+  font-weight: 600;
   text-align: center;
 
   &--padding-50 {
@@ -14,7 +15,11 @@
   }
 
   &--padding-30 {
-    padding: 19px 30px;
+    padding: 20px 30px;
+  }
+
+  &--padding-top-14 {
+    padding: 14px 50px;
   }
 
   &--bg-transparent {
@@ -34,6 +39,17 @@
 
   &__hero {
     display: block;
+  }
+
+  &__join {
+    display: block;
+    @media screen and (width < 1280px) {
+      width: 100%;
+    }
+
+    @media screen and (width > 1279px) {
+      display: inline-block;
+    }
   }
 
   @media screen and (width < 834px) {
@@ -62,7 +78,8 @@
   }
 
   &__creators,
-  &__header {
+  &__header,
+  &__join {
     margin-bottom: 0;
   }
 }

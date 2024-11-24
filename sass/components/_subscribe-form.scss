@@ -1,0 +1,34 @@
+.subscribe-form {
+  width: 100%;
+
+  @media screen and (width > 1279px) {
+    position: relative;
+  }
+}
+
+.subscribe-form__input {
+  display: block;
+  width: 100%;
+  padding: 14px 20px 15px 20px;
+  margin-bottom: 13px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: $background-color;
+  font-weight: 400;
+
+  &::placeholder {
+    color: $background-color;
+  }
+}
+
+.button__join {
+  @media screen and (width > 1279px) {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+}
