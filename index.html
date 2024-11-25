@@ -1566,30 +1566,7 @@
                       type="image/jpeg"
                       media="(min-width: 1280px)"
                     />
-                    <source
-                      srcset="
-                        ./images/discover/tab/disk-3@1x.avif 1x,
-                        ./images/discover/tab/disk-3@2x.avif 2x
-                      "
-                      type="image/avif"
-                      media="(min-width: 834px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/discover/tab/disk-3@1x.webp 1x,
-                        ./images/discover/tab/disk-3@2x.webp 2x
-                      "
-                      type="image/webp"
-                      media="(min-width: 834px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/discover/tab/disk-3@1x.jpg 1x,
-                        ./images/discover/tab/disk-3@2x.jpg 2x
-                      "
-                      type="image/jpeg"
-                      media="(min-width: 834px)"
-                    />
+
                     <source
                       srcset="
                         ./images/discover/mob/disk-3@1x.avif 1x,
@@ -1868,5 +1845,86 @@
         </div>
       </section>
     </main>
+    <footer class="footer container">
+      <div class="footer-desk-wrap">
+        <div class="logo-socials-wrap">
+          <div class="site-logo site-logo__footer">
+            <a href="./index.html" class="site-logo__link">
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#i-logo"></use>
+              </svg>
+              <svg width="200" height="20">
+                <use href="./images/icons.svg#i-marketplace"></use>
+              </svg>
+            </a>
+          </div>
+          <p class="footer__text">
+            NFT marketplace UI created with Anima for Figma.
+          </p>
+          <div class="social-wrap">
+            <p class="footer__join-call">Join our community</p>
+            <ul class="socials">
+              <li>
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#i-DiscordLogo"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#i-YoutubeLogo"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#i-TwitterLogo"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#i-InstagramLogo"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-explore-wrap">
+          <p class="footer__title">Explore</p>
+          <ul class="footer__menu">
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Rankings</a></li>
+            <li><a href="#">Connect a wallet</a></li>
+          </ul>
+        </div>
+        <div class="footer-join-wrap">
+          <p class="footer__title"><strong>Join our weekly digest</strong></p>
+          <p class="footer__text">
+            Get exclusive promotions & updates straight to your inbox.
+          </p>
+          <form class="subscribe-form subscribe-form__footer">
+            <input
+              class="subscribe-form__input"
+              type="text"
+              name="email"
+              placeholder="Enter your email here"
+            />
+            <button class="button__footer" type="submit">
+              <div class="button-link button-link--padding-top-14">
+                <svg
+                  class="button-link__icon button-link__icon--action-color"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#i-EnvelopeSimple"></use></svg
+                >Subscribe
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="copy">
+        <p class="copy__text">&copy; NFT Market. Use this template freely.</p>
+      </div>
+    </footer>
   </body>
 </html>
