@@ -307,6 +307,23 @@ button {
   }
 }
 
+.burger-menu__icon {
+  fill: #ffffff;
+  -webkit-transition: fill 250ms ease-in;
+  transition: fill 250ms ease-in;
+}
+.burger-menu:hover .burger-menu__icon, .burger-menu:focus .burger-menu__icon {
+  fill: #a259ff;
+}
+
+.menu__link {
+  -webkit-transition: color 250ms ease-in;
+  transition: color 250ms ease-in;
+}
+.menu__link:hover, .menu__link:focus {
+  color: #a259ff;
+}
+
 .button-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,10 +336,20 @@ button {
           justify-content: center;
   gap: 12px;
   background-color: #a259ff;
+  border: 1px solid #a259ff;
   border-radius: 20px;
   color: #ffffff;
   font-weight: 600;
   text-align: center;
+  -webkit-transition: background-color 250ms ease-in, color 250ms ease-in;
+  transition: background-color 250ms ease-in, color 250ms ease-in;
+}
+.button-link:hover, .button-link:focus {
+  background-color: transparent;
+  border: 1px solid #a259ff;
+}
+.button-link__join:hover, .button-link__join:focus {
+  color: #a259ff;
 }
 .button-link--padding-50 {
   padding: 20px 50px;
@@ -330,16 +357,23 @@ button {
 .button-link--padding-30 {
   padding: 20px 30px;
 }
-.button-link--padding-top-14 {
-  padding: 14px 50px;
+.button-link--padding-top-13 {
+  padding: 13px 50px;
 }
 .button-link--bg-transparent {
   background-color: transparent;
   border: 1px solid #a259ff;
 }
+.button-link--bg-transparent:hover, .button-link--bg-transparent:focus {
+  background-color: #a259ff;
+}
 .button-link--bg-white {
   background-color: #ffffff;
   color: #2b2b2b;
+}
+.button-link--bg-white:hover, .button-link--bg-white:focus {
+  background-color: #a259ff;
+  color: #ffffff;
 }
 
 .button {
@@ -349,9 +383,6 @@ button {
 .button__hero {
   display: block;
 }
-.button__join {
-  display: block;
-}
 @media screen and (width < 1280px) {
   .button__join {
     width: 100%;
@@ -359,7 +390,23 @@ button {
 }
 @media screen and (width > 1279px) {
   .button__join {
-    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+}
+@media screen and (width < 834px) {
+  .button__footer {
+    width: 100%;
+  }
+}
+@media screen and (width > 833px) {
+  .button__footer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
   }
 }
 @media screen and (width < 834px) {
@@ -390,10 +437,20 @@ button {
   margin-bottom: 0;
 }
 
+.button-link__icon {
+  -webkit-transition: fill 250ms ease-in;
+  transition: fill 250ms ease-in;
+}
 .button-link__icon--white {
   fill: #ffffff;
 }
 .button-link__icon--action-color {
+  fill: #a259ff;
+}
+.button-link--bg-transparent:hover .button-link__icon--action-color, .button-link--bg-transparent:focus .button-link__icon--action-color, .button-link--bg-white:hover .button-link__icon--action-color, .button-link--bg-white:focus .button-link__icon--action-color {
+  fill: #ffffff;
+}
+.button-link__join:hover .button-link__icon--white, .button-link__join:focus .button-link__icon--white {
   fill: #a259ff;
 }
 
@@ -1360,31 +1417,6 @@ button {
 }
 .subscribe-form__input::placeholder {
   color: #2b2b2b;
-}
-
-@media screen and (width > 1279px) {
-  .button__join {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    right: 0;
-    z-index: 2;
-  }
-}
-
-@media screen and (width < 834px) {
-  .button__footer {
-    width: 100%;
-  }
-}
-@media screen and (width > 833px) {
-  .button__footer {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    right: 0;
-    z-index: 2;
-  }
 }
 
 .footer {

@@ -37,15 +37,15 @@
         </a>
       </div>
       <button class="burger-menu" type="button">
-        <svg width="24" height="24">
+        <svg class="burger-menu__icon" width="24" height="24">
           <use href="./images/icons.svg#i-Burger-Menu"></use>
         </svg>
       </button>
       <nav class="navigation">
         <ul class="menu">
-          <li><a href="#">Marketplace</a></li>
-          <li><a href="#">Rankings</a></li>
-          <li><a href="#">Connect a wallet</a></li>
+          <li><a class="menu__link" href="#">Marketplace</a></li>
+          <li><a class="menu__link" href="#">Rankings</a></li>
+          <li><a class="menu__link" href="#">Connect a wallet</a></li>
         </ul>
         <div class="button button__header">
           <a class="button-link button-link--padding-30" href="#">
@@ -1658,7 +1658,11 @@
                   class="button-link button-link--padding-50 button-link--bg-white"
                   href="#"
                 >
-                  <svg class="button-link__icon" width="20" height="20">
+                  <svg
+                    class="button-link__icon button-link__icon--action-color"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/icons.svg#i-Eye"></use></svg
                   >See NFT
                 </a>
@@ -1685,7 +1689,11 @@
                 class="button-link button-link--padding-50 button-link--bg-white"
                 href="#"
               >
-                <svg class="button-link__icon" width="20" height="20">
+                <svg
+                  class="button-link__icon button-link__icon--action-color"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#i-Eye"></use></svg
                 >See NFT
               </a>
@@ -1829,16 +1837,17 @@
                 name="email"
                 placeholder="Enter your email here"
               />
-              <button class="button__join" type="submit">
-                <div class="button-link button-link--padding-top-14">
-                  <svg
-                    class="button-link__icon button-link__icon--action-color"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/icons.svg#i-EnvelopeSimple"></use></svg
-                  >Subscribe
-                </div>
+              <button
+                class="button__join button-link button-link__join button-link--padding-top-13"
+                type="submit"
+              >
+                <svg
+                  class="button-link__icon button-link__icon--white"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#i-EnvelopeSimple"></use></svg
+                >Subscribe
               </button>
             </form>
           </div>
@@ -1908,16 +1917,17 @@
               name="email"
               placeholder="Enter your email here"
             />
-            <button class="button__footer" type="submit">
-              <div class="button-link button-link--padding-top-14">
-                <svg
-                  class="button-link__icon button-link__icon--action-color"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#i-EnvelopeSimple"></use></svg
-                >Subscribe
-              </div>
+            <button
+              class="button__footer button-link button-link__join button-link--padding-top-13"
+              type="submit"
+            >
+              <svg
+                class="button-link__icon button-link__icon--white"
+                width="20"
+                height="20"
+              >
+                <use href="./images/icons.svg#i-EnvelopeSimple"></use></svg
+              >Subscribe
             </button>
           </form>
         </div>

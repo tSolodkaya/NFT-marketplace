@@ -28,27 +28,3 @@
     color: $background-color;
   }
 }
-
-.button__join {
-  @media screen and (width > 1279px) {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    right: 0;
-    z-index: 2;
-  }
-}
-
-.button__footer {
-  @media screen and (width < 834px) {
-    width: 100%;
-  }
-
-  @media screen and (width > 833px) {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    right: 0;
-    z-index: 2;
-  }
-}

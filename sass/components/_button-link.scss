@@ -5,10 +5,24 @@
   gap: 12px;
 
   background-color: $call-to-action-color;
+  border: 1px solid $call-to-action-color;
   border-radius: 20px;
   color: $text-color;
   font-weight: 600;
   text-align: center;
+
+  transition: background-color 250ms ease-in, color 250ms ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 1px solid $call-to-action-color;
+  }
+
+  &__join:hover,
+  &__join:focus {
+    color: $call-to-action-color;
+  }
 
   &--padding-50 {
     padding: 20px 50px;
@@ -18,18 +32,29 @@
     padding: 20px 30px;
   }
 
-  &--padding-top-14 {
-    padding: 14px 50px;
+  &--padding-top-13 {
+    padding: 13px 50px;
   }
 
   &--bg-transparent {
     background-color: transparent;
     border: 1px solid $call-to-action-color;
+
+    &:hover,
+    &:focus {
+      background-color: $call-to-action-color;
+    }
   }
 
   &--bg-white {
     background-color: $text-color;
     color: $background-color;
+
+    &:hover,
+    &:focus {
+      background-color: $call-to-action-color;
+      color: $text-color;
+    }
   }
 }
 
@@ -42,13 +67,28 @@
   }
 
   &__join {
-    display: block;
     @media screen and (width < 1280px) {
       width: 100%;
     }
 
     @media screen and (width > 1279px) {
-      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+    }
+  }
+
+  &__footer {
+    @media screen and (width < 834px) {
+      width: 100%;
+    }
+
+    @media screen and (width > 833px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
     }
   }
 
@@ -64,6 +104,7 @@
 
   @media screen and (width > 833px) {
     margin-bottom: 0;
+
     &--mob-visibility {
       display: none;
     }
@@ -85,11 +126,24 @@
 }
 
 .button-link__icon {
+  transition: fill 250ms ease-in;
   &--white {
     fill: $text-color;
   }
 
   &--action-color {
+    fill: $call-to-action-color;
+  }
+
+  .button-link--bg-transparent:hover &--action-color,
+  .button-link--bg-transparent:focus &--action-color,
+  .button-link--bg-white:hover &--action-color,
+  .button-link--bg-white:focus &--action-color {
+    fill: $text-color;
+  }
+
+  .button-link__join:hover &--white,
+  .button-link__join:focus &--white {
     fill: $call-to-action-color;
   }
 }

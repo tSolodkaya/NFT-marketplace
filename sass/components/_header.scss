@@ -22,3 +22,22 @@
     display: none;
   }
 }
+
+.burger-menu__icon {
+  fill: $text-color;
+  transition: fill 250ms ease-in;
+
+  .burger-menu:hover &,
+  .burger-menu:focus & {
+    fill: $call-to-action-color;
+  }
+}
+
+.menu__link {
+  transition: color 250ms ease-in;
+
+  &:hover,
+  &:focus {
+    color: $call-to-action-color;
+  }
+}
