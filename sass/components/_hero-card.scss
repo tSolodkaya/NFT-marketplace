@@ -6,6 +6,13 @@
   background-color: $background-secondary;
   overflow: hidden;
 
+  transition: box-shadow 250ms ease-in;
+
+  &:hover,
+  &:focus {
+    box-shadow: $box-shadow;
+  }
+
   @media screen and (width > 833px) {
     width: 330px;
     margin-bottom: 0;
@@ -16,9 +23,16 @@
   }
 }
 
+.hero-card__link {
+  text-align: start;
+}
+
 .collection-card__hero-img-thumb {
   width: 315px;
   height: 206px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  overflow: hidden;
 
   @media screen and (width > 833px) {
     width: 330px;
@@ -29,9 +43,6 @@
     width: 510px;
     height: 400px;
   }
-
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
 }
 
 .hero-card__info {

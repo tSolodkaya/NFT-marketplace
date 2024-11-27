@@ -20,6 +20,12 @@
   border-radius: 22px;
   background-color: $background-secondary;
 
+  transition: box-shadow 250ms ease-in;
+  &:hover,
+  &:focus {
+    box-shadow: $box-shadow;
+  }
+
   @media screen and (width > 833px) and (width < 1280px) {
     width: 330px;
     &:nth-child(n + 3) {

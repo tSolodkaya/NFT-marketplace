@@ -13,6 +13,12 @@
 
   &__heightlight {
     margin-bottom: 30px;
+
+    transition: background-color 250ms ease-in;
+    &:hover,
+    &:focus {
+      background-color: $call-to-action-color;
+    }
   }
   &--bg-dark {
     background-color: $background-color;

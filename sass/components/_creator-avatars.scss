@@ -23,6 +23,12 @@
   background-color: $background-secondary;
   border-radius: 20px;
 
+  transition: background-color 250ms ease-in;
+  &:hover,
+  &:focus {
+    background-color: $call-to-action-color;
+  }
+
   @media screen and (width < 833px) {
     &:nth-child(n + 6) {
       display: none;
@@ -99,6 +105,13 @@
 .creator__total {
   color: $caption-label-text;
   font-weight: 400;
+
+  transition: color 250ms ease-in;
+
+  .creator:hover &,
+  .creator:focus & {
+    color: $text-color;
+  }
 }
 
 .creator__total-value {

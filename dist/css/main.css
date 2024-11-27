@@ -317,6 +317,8 @@ button {
 }
 
 .menu__link {
+  padding-top: 15px;
+  padding-bottom: 15px;
   -webkit-transition: color 250ms ease-in;
   transition: color 250ms ease-in;
 }
@@ -578,6 +580,7 @@ button {
 @media screen and (width > 1279px) {
   .additional {
     min-width: 150px;
+    margin-top: 0;
   }
 }
 
@@ -620,6 +623,14 @@ button {
   border-radius: 22px;
   background-color: #3b3b3b;
   overflow: hidden;
+  -webkit-transition: -webkit-box-shadow 250ms ease-in;
+  transition: -webkit-box-shadow 250ms ease-in;
+  transition: box-shadow 250ms ease-in;
+  transition: box-shadow 250ms ease-in, -webkit-box-shadow 250ms ease-in;
+}
+.hero-card:hover, .hero-card:focus {
+  -webkit-box-shadow: 4px 4px 10px 0px rgb(162, 89, 255);
+          box-shadow: 4px 4px 10px 0px rgb(162, 89, 255);
 }
 @media screen and (width > 833px) {
   .hero-card {
@@ -633,11 +644,16 @@ button {
   }
 }
 
+.hero-card__link {
+  text-align: start;
+}
+
 .collection-card__hero-img-thumb {
   width: 315px;
   height: 206px;
   border-top-left-radius: 22px;
   border-top-right-radius: 22px;
+  overflow: hidden;
 }
 @media screen and (width > 833px) {
   .collection-card__hero-img-thumb {
@@ -843,6 +859,11 @@ button {
   padding: 20px;
   background-color: #3b3b3b;
   border-radius: 20px;
+  -webkit-transition: background-color 250ms ease-in;
+  transition: background-color 250ms ease-in;
+}
+.creator:hover, .creator:focus {
+  background-color: #a259ff;
 }
 @media screen and (width < 833px) {
   .creator:nth-child(n+6) {
@@ -936,6 +957,11 @@ button {
 .creator__total {
   color: #858584;
   font-weight: 400;
+  -webkit-transition: color 250ms ease-in;
+  transition: color 250ms ease-in;
+}
+.creator:hover .creator__total, .creator:focus .creator__total {
+  color: #ffffff;
 }
 
 .creator__total-value {
@@ -1005,11 +1031,19 @@ button {
   width: 150px;
   border-radius: 22px;
   background-color: #3b3b3b;
+  -webkit-transition: -webkit-box-shadow 250ms ease-in;
+  transition: -webkit-box-shadow 250ms ease-in;
+  transition: box-shadow 250ms ease-in;
+  transition: box-shadow 250ms ease-in, -webkit-box-shadow 250ms ease-in;
 }
 @media screen and (width > 1279px) {
   .category {
     width: 240px;
   }
+}
+.category:hover, .category:focus {
+  -webkit-box-shadow: 4px 4px 10px 0px rgb(162, 89, 255);
+          box-shadow: 4px 4px 10px 0px rgb(162, 89, 255);
 }
 
 .category__title {
@@ -1049,6 +1083,14 @@ button {
   width: 315px;
   border-radius: 22px;
   background-color: #3b3b3b;
+  -webkit-transition: -webkit-box-shadow 250ms ease-in;
+  transition: -webkit-box-shadow 250ms ease-in;
+  transition: box-shadow 250ms ease-in;
+  transition: box-shadow 250ms ease-in, -webkit-box-shadow 250ms ease-in;
+}
+.discover-card:hover, .discover-card:focus {
+  -webkit-box-shadow: 4px 4px 10px 0px rgb(162, 89, 255);
+          box-shadow: 4px 4px 10px 0px rgb(162, 89, 255);
 }
 @media screen and (width > 833px) and (width < 1280px) {
   .discover-card {
@@ -1132,6 +1174,11 @@ button {
 }
 .artist-card__heightlight {
   margin-bottom: 30px;
+  -webkit-transition: background-color 250ms ease-in;
+  transition: background-color 250ms ease-in;
+}
+.artist-card__heightlight:hover, .artist-card__heightlight:focus {
+  background-color: #a259ff;
 }
 .artist-card--bg-dark {
   background-color: #2b2b2b;
@@ -1279,19 +1326,14 @@ button {
   padding: 20px;
   border-radius: 20px;
   background-color: #3b3b3b;
+  -webkit-transition: -webkit-box-shadow 250ms ease-in;
+  transition: -webkit-box-shadow 250ms ease-in;
+  transition: box-shadow 250ms ease-in;
+  transition: box-shadow 250ms ease-in, -webkit-box-shadow 250ms ease-in;
 }
-@media screen and (width < 834px) {
-  .work-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.work-card:hover, .work-card:focus {
+  -webkit-box-shadow: 4px 4px 10px 0px rgb(162, 89, 255);
+          box-shadow: 4px 4px 10px 0px rgb(162, 89, 255);
 }
 @media screen and (width > 833px) {
   .work-card {
@@ -1303,6 +1345,23 @@ button {
   .work-card {
     width: 330px;
     padding: 10px 30px 30px 30px;
+  }
+}
+
+.work-card__link {
+  text-align: start;
+}
+@media screen and (width < 834px) {
+  .work-card__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1504,6 +1563,14 @@ button {
   gap: 20px;
 }
 
+.footer__link {
+  -webkit-transition: color 250ms ease-in;
+  transition: color 250ms ease-in;
+}
+.footer__link:hover, .footer__link:focus {
+  color: #a259ff;
+}
+
 .copy__text {
   font-size: 12px;
   font-weight: 400;
@@ -1537,4 +1604,16 @@ button {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+}
+
+.social__link:hover .social__icon, .social__link:focus .social__icon {
+  fill: #a259ff;
+  stroke: #a259ff;
+}
+
+.social__icon {
+  -webkit-transition: fill 250ms ease-in, stroke 250ms ease-in;
+  transition: fill 250ms ease-in, stroke 250ms ease-in;
+  fill: #858584;
+  stroke: #858584;
 }/*# sourceMappingURL=main.css.map */

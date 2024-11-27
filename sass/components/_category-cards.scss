@@ -54,6 +54,12 @@
   @media screen and (width > 1279px) {
     width: 240px;
   }
+
+  transition: box-shadow 250ms ease-in;
+  &:hover,
+  &:focus {
+    box-shadow: $box-shadow;
+  }
 }
 
 .category__title {

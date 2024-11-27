@@ -3,3 +3,17 @@
   align-items: center;
   gap: 10px;
 }
+
+.social__link {
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $call-to-action-color;
+    stroke: $call-to-action-color;
+  }
+}
+
+.social__icon {
+  transition: fill 250ms ease-in, stroke 250ms ease-in;
+  fill: $caption-label-text;
+  stroke: $caption-label-text;
+}
