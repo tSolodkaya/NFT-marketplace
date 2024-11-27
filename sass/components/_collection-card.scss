@@ -15,6 +15,21 @@
   }
 }
 
+.collection-card__link {
+  text-align: start;
+  border-radius: 20px;
+  transition: box-shadow 250ms ease-in;
+
+  &:hover,
+  &:focus {
+    box-shadow: $box-shadow;
+  }
+}
+.collection-card__link:hover,
+.collection-card__link:focus {
+  box-shadow: 1px 1px 10px 0px rgba(162, 89, 255, 1);
+}
+
 .collection-card__img {
   margin-bottom: 15px;
   overflow: hidden;

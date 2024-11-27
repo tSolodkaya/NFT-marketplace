@@ -581,6 +581,14 @@ button {
   }
 }
 
+.addititonal__link {
+  -webkit-transition: color 250ms ease-in;
+  transition: color 250ms ease-in;
+}
+.addititonal__link:hover, .addititonal__link:focus {
+  color: #a259ff;
+}
+
 .additional__numbers {
   font-family: "Space Mono", sans-serif;
   font-size: 22px;
@@ -669,6 +677,25 @@ button {
   .collection-card {
     width: 330px;
   }
+}
+
+.collection-card__link {
+  text-align: start;
+  border-radius: 20px;
+  -webkit-transition: -webkit-box-shadow 250ms ease-in;
+  transition: -webkit-box-shadow 250ms ease-in;
+  transition: box-shadow 250ms ease-in;
+  transition: box-shadow 250ms ease-in, -webkit-box-shadow 250ms ease-in;
+}
+.collection-card__link:hover, .collection-card__link:focus {
+  -webkit-box-shadow: 4px 4px 10px 0px rgb(162, 89, 255);
+          box-shadow: 4px 4px 10px 0px rgb(162, 89, 255);
+}
+
+.collection-card__link:hover,
+.collection-card__link:focus {
+  -webkit-box-shadow: 1px 1px 10px 0px rgb(162, 89, 255);
+          box-shadow: 1px 1px 10px 0px rgb(162, 89, 255);
 }
 
 .collection-card__img {

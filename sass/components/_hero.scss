@@ -83,6 +83,13 @@
   }
 }
 
+.addititonal__link {
+  transition: color 250ms ease-in;
+  &:hover,
+  &:focus {
+    color: $call-to-action-color;
+  }
+}
 .additional__numbers {
   font-family: $secondary-font-family;
   font-size: 22px;
